@@ -18,8 +18,6 @@ def main():
     # Text input box for user input
     input_text = st.text_area("Enter text to translate", "")
 
-    # Select box to choose target language
-    avalable_languages = ["English", "Spanish", "French", "German", "Chinese", "Japanese"]
     target_language = st.selectbox("Select target language", LANGUAGES.values())
 
     if st.button("Translate"):
